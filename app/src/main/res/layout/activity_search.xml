@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/clSearch"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@color/colorSearchBg"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:background="@android:color/white"
+            android:hint="@string/search_title"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textCursorDrawable= "@null"
+            android:textColorHint="@android:color/black"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="15dp"
+            android:paddingStart="9dp"
+            android:paddingEnd="9dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="Autofill" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSearch"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
